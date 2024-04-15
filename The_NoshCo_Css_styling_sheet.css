@@ -46,7 +46,7 @@
 /* ------------------------ Background --------------------------*/
 
 body {
-  background-image: url("../Logo_and_background_files/lemons_and_olives_huge.jpg");
+  background-image: url("lemons_and_olives_huge.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
