@@ -73,12 +73,11 @@ body {
   color: rgb(31, 15, 31);
   text-decoration: none;
   padding: 0 14px;
+  border: 1px solid transparent; /* Add a transparent border */
 }
 
 .navbar a:hover {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+  border-color: black; /* Change border color on hover */
 }
 
 /* -------------------------Product widgets ----------------------*/
