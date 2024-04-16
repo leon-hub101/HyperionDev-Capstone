@@ -51,6 +51,35 @@ To run this project locally:
    ```
 3. Open `index.html` in your web browser to view the project.
 
+## Usage
+
+Once you have installed the Nosh Co. online store on your local machine, you can explore a variety of features designed to enhance your shopping experience:
+
+### Navigating the Store
+- **Home Page**: Start on the `index.html` page, which serves as the gateway to all our products.
+- **Exploring Products**: Navigate through the product categories by clicking on the links for nuts, fruits, and coffee on the home page. Each category has its own dedicated page (`TheNoshCo_Nuts_page.html`, `TheNoshCo_Fruits_page.html`, `TheNoshCo_Coffee_page.html`) where you can view all available items.
+- **Viewing Product Details**: Click on any product to see detailed information including price, specifications, and more.
+
+### Managing Your Wishlist
+- **Adding Items to Your Wishlist**: While browsing products, click the "Add to Wishlist" button next to any item to save it for later.
+- **Accessing Your Wishlist**: Visit the `The_NoshCo_WL_page.html` to view all the items you have added to your wishlist.
+
+### Additional Features
+- **Contacting Us**: Should you need to get in touch with customer service, visit the `TheNoshCo_Contact_page.html` for contact information and support.
+- **Reviewing Our Policies**: Understand how we handle your information by reviewing our privacy policy on the `TheNoshCo_Privacy_Policy.html` page.
+
+### Upcoming Functionality
+- **Shopping Basket**: A feature to review selected items before purchase is under development and will be available soon.
+- **Online Checkout**: We will be implementing an online checkout system to allow purchases directly from the website. This feature is expected to enhance your shopping experience by adding convenience and security.
+- **Social Media Integration**: In future updates, we plan to integrate functionality that will allow you to like products and share your selections directly on social media platforms. This will include options to comment on and recommend items within your social networks.
+
+### Current Limitations
+- The site currently does not communicate with the outside world, such as back-end servers or APIs, which means all features are simulated within the local environment. This will change as we introduce server-side functionality in upcoming releases.
+
+### Tips for Optimal Experience
+- **Browser Compatibility**: For the best experience, use a modern web browser such as Google Chrome, Firefox, or Safari.
+- **Local Testing**: If you encounter issues while testing locally, ensure JavaScript is enabled in your browser, as our site relies heavily on JavaScript for dynamic content and interactivity.
+
 ## How to Contribute
 
 We welcome contributions to the Nosh Co. online store. To contribute:
