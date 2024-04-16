@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Create a delete button for each item
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Delete';
+            deleteButton.textContent = 'X';
             deleteButton.onclick = function() { deleteItem(index); };
             
             li.appendChild(deleteButton);
