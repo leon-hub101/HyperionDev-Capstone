@@ -73,11 +73,11 @@ body {
   color: rgb(31, 15, 31);
   text-decoration: none;
   padding: 0 14px;
-  border: 1px solid transparent; /* Add a transparent border */
+  border: 1px solid transparent; 
 }
 
 .navbar a:hover {
-  border-color: black; /* Change border color on hover */
+  border-color: black; 
 }
 
 /* -------------------------Product widgets ----------------------*/
@@ -299,7 +299,6 @@ body {
 
 .privacy-policy {
   padding: 50px;
-  margin-top: 0px;
   margin-bottom: 50px;
   border-width: 1px;
   border-style: solid;
@@ -315,4 +314,28 @@ body {
 
 .pp-list {
   text-align: left;
+}
+
+/*--------------------------------Wish list page------------------------------------*/
+.WL_container {
+  width: 1650px;
+  height: 400px;
+  margin: 100px;
+  justify-content: center;
+  display: flex;
+}
+
+#wishList {
+  padding: 50px;
+  margin-top: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: whitesmoke;
+  background: linear-gradient(to right, #faf2f2, white);
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: black;
 }
