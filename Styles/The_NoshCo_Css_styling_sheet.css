@@ -172,9 +172,10 @@ button {
 
 /*---------------------------Testimonials---------------------*/
 
-.testimonial-container {
-  width: 600px;
-  height: 400px;
+.testimonial-container { 
+  /*width: 600px;*/
+  /*height: 400px;*/
+  padding: 30px;
   margin: 75px auto;
   border-width: 1px;
   border-style: solid;
