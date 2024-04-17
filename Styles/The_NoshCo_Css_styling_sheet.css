@@ -72,11 +72,11 @@ body {
   color: rgb(31, 15, 31);
   text-decoration: none;
   padding: 10px 80px;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
 }
 
 .navbar a:hover {
-  border-color: black; 
+  border-color: black;
 }
 
 /* -------------------------Product widgets ----------------------*/
@@ -145,13 +145,38 @@ body {
   transform: rotateY(0deg);
 }
 
+/*.details-toggle {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #f1f1f1;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-block-end: auto;
+}
+
+.product-extra-details{
+  padding: 50px;
+  margin-bottom: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: whitesmoke;
+  background: linear-gradient(to right, #faf2f2, white);
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: black;
+}*/
+
 /*---------------------------Buttons--------------------------*/
 button {
   background-color: whitesmoke;
   color: black;
   padding: 5px 5px;
   border: none;
-   border-radius: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -165,23 +190,9 @@ button {
 }
 
 .liked-button {
-    background-color: gold; 
-    color: white; 
-    border: none; 
-}
-
-/*---------------------------Testimonials---------------------*/
-
-.testimonial-container { 
-  /*width: 600px;*/
-  /*height: 400px;*/
-  padding: 30px;
-  margin: 75px auto;
-  border-width: 1px;
-  border-style: solid;
-  border-color: whitesmoke;
-  background-color: white;
-  border-radius: 10px;
+  background-color: gold;
+  color: white;
+  border: none;
 }
 
 /* --------------------------- Footer ----------------------*/
@@ -225,6 +236,10 @@ button {
   border-radius: 10px;
 }
 
+#welcome1_1, #welcome1_2, #welcome1_3 {
+  display: none;
+}
+
 #welcome1_1,
 #welcome1_3 {
   font-family: "Montserrat", sans-serif;
@@ -258,6 +273,17 @@ button {
   color: black;
 }
 
+/* Animation effect on the hyperlinks*/
+.Coffee-health-benefits a {
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.Coffee-health-benefits a:hover {
+  color: #ff1302; 
+  text-decoration: underline;
+}
+
 .Nuts-health-benefits {
   padding: 50px;
   margin-bottom: 50px;
@@ -273,6 +299,18 @@ button {
   color: black;
 }
 
+/* Animation effect on the hyperlinks*/
+.Nuts-health-benefits a {
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.Nuts-health-benefits a:hover {
+  color: #ff1302; 
+  text-decoration: underline;
+}
+
+
 .Dried-fruits-health-benefits {
   padding: 50px;
   margin-bottom: 50px;
@@ -286,6 +324,33 @@ button {
   font-weight: 400;
   line-height: 1.8;
   color: black;
+}
+
+/* Animation effect on the hyperlinks*/
+.Dried-fruits-health-benefits a {
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.Dried-fruits-health-benefits a:hover {
+  color: #ff1302; 
+  text-decoration: underline;
+}
+
+.testimonial-container {
+  /*width: 600px;*/
+  /*height: 400px;*/
+  padding: 30px;
+  margin: 75px auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: whitesmoke;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.testimonial-trigger:hover + .testimonial-content {
+  display: block;
 }
 
 /*------------------------ Contact Page --------------------------*/
@@ -317,7 +382,7 @@ button {
 /*------------------------------ Privacy Policy page ----------------------*/
 
 .pp-container {
-  width: 1650px;
+  width: 1350px;
   height: 400px;
   margin: 100px;
 }
