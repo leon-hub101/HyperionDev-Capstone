@@ -165,9 +165,9 @@ button {
 }
 
 .liked-button {
-    background-color: gold; /* Gold color indicates a liked state */
-    color: white; /* White text for better visibility */
-    border: none; /* Optional: removes the border if any */
+    background-color: gold; 
+    color: white; 
+    border: none; 
 }
 
 /*---------------------------Testimonials---------------------*/
