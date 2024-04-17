@@ -1,11 +1,11 @@
 function addToBasket(prod, size, price) {}
 
 // Function to add an item to the wishlist
-function addToWishList(itemName) {
+function addToWishList(itemName, itemImageUrl) {
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || []; // Retrieve or initialize the wishlist
 
-  if (!wishlist.includes(itemName)) {
-    wishlist.push(itemName); // Add the item
+  if (!wishlist.some(item => item.name === itemName)) {
+    wishlist.push({ name: itemName, imageUrl: itemImageUrl }); // Add the item and its image
     localStorage.setItem("wishlist", JSON.stringify(wishlist)); // Save the updated list to local storage
 
     alert(
@@ -37,10 +37,25 @@ function refreshWishlistItems() {
     let items = JSON.parse(localStorage.getItem("wishlist")) || [];
     items.forEach((item, index) => {
       const li = document.createElement("li"); // Creates a new list element
-      li.textContent = item; // Sets the content to the item being iterated over
+
+      if (item.imageUrl) {
+        const img = document.createElement("img");
+        img.src = item.imageUrl;
+        img.alt = "Image of " + item.name;
+        img.style.width = "100px";
+        img.style.height = "auto"; // Set image height
+        img.style.marginRight = "10px"; // Add some right margin
+        li.appendChild(img);
+      }
+
+      // Add the item name to the html
+      const text = document.createTextNode(item.name);
+      li.appendChild(text);
+          
+      // Create delete button
       const deleteButton = document.createElement("button"); // Creates a new button element
       deleteButton.textContent = "x"; // Sets the content of the button to "x"
-      deleteButton.setAttribute("aria-label", "Remove " + item); // Added for screen reader accessibility (someone suggested this to me because I use an "x" for the button content)
+      deleteButton.setAttribute("aria-label", "Remove " + item.name); // Added for screen reader accessibility (someone suggested this to me because I use an "x" for the button content)
       deleteButton.onclick = function () {
         deleteItem(index);
       }; // Onclick function attached to the delete button
