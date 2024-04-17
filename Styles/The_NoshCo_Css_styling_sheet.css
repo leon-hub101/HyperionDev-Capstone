@@ -148,15 +148,23 @@ body {
 /*---------------------------Buttons--------------------------*/
 button {
   background-color: whitesmoke;
-    color: black;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  color: black;
+  padding: 5px 5px;
+  border: none;
+   border-radius: 5px;
+  cursor: pointer;
 }
 
 /*-----------------------Like Buttons --------------------------*/
 .like-button {
+  background-color: whitesmoke;
+  color: black;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.liked-button {
     background-color: gold; /* Gold color indicates a liked state */
     color: white; /* White text for better visibility */
     border: none; /* Optional: removes the border if any */
