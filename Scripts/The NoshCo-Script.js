@@ -37,7 +37,7 @@ function refreshWishlistItems() {
         li.textContent = item;
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.textContent = 'x';
         deleteButton.onclick = function() { deleteItem(index); };
 
         li.appendChild(deleteButton);
