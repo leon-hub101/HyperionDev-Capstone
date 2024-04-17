@@ -29,25 +29,24 @@ function deleteItem(index) {
 // Function to refresh the wishlist display after an update
 function refreshWishlistItems() {
     const wishlistItems = document.querySelector('.wishlist_items');
-    wishlistItems.innerHTML = ''; // Clear the existing list
-
-    let items = JSON.parse(localStorage.getItem('wishlist')) || [];
-    items.forEach((item, index) => {
-        const li = document.createElement('li');
-        li.textContent = item;
-
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'x';
-        deleteButton.onclick = function() { deleteItem(index); };
-
-        li.appendChild(deleteButton);
-        wishlistItems.appendChild(li);
-    });
+    if (wishlistItems) {
+        wishlistItems.innerHTML = ''; // Clear the existing list
+        let items = JSON.parse(localStorage.getItem('wishlist')) || [];
+        items.forEach((item, index) => {
+            const li = document.createElement('li');// Creates a new list element
+            li.textContent = item;// Sets the content to the item being iterated over
+            const deleteButton = document.createElement('button');// Creates a new button element
+            deleteButton.textContent = 'x';// Sets the content of the button to "x"
+            deleteButton.setAttribute('aria-label', 'Remove ' + item);// Added for screen reader accessibility (someone suggested this to me because I use an "x" for the button content)
+            deleteButton.onclick = function() { deleteItem(index); };// Onclick function attached to the delete button
+            li.appendChild(deleteButton);
+            wishlistItems.appendChild(li);
+        });
+    }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    refreshWishlistItems(); // Initial setup to display the current wishlist
-});
+// Event listener that calls the refresh wishlist function as soon as the page loads
+document.addEventListener('DOMContentLoaded', refreshWishlistItems);
 
 // JQuery function for handling the click event on like buttons
 $(document).ready(function() {
