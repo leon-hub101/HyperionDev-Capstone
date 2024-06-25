@@ -51,6 +51,8 @@ To run this project locally:
    ```
 3. Open `index.html` in your web browser to view the project.
 
+Alternatively, you can simply follow this link to see the pages: https://leon-hub101.github.io/HyperionDev-Capstone/
+
 ## Usage
 
 Once you have installed the Nosh Co. online store on your local machine, you can explore a variety of features designed to enhance your shopping experience:
